@@ -1609,9 +1609,11 @@
             </div>
             <style data-emotion="css jihucl">
                 .css-jihucl {
-                    position: -webkit-sticky;
+                    /* position: -webkit-sticky;
                     position: sticky;
-                    top: -2px;
+                    top: -2px; */
+
+                    position: relative;
                     z-index: 100;
                 }
             </style>
@@ -1765,7 +1767,7 @@
                         }
                     }
                 </style>
-                <div class="css-1gkfpqx"><a aria-current="page" class="css-14mlvyb" href="index.htm">Doug Giga Lab</a>
+                <div class="css-1gkfpqx"><a aria-current="page" class="css-14mlvyb" href="index.htm">DAQ Ai chat</a>
                     <style data-emotion="css e0dnmk">
                         .css-e0dnmk {
                             cursor: pointer;
@@ -1841,7 +1843,7 @@
                         .active {
                             height: 200px;
                             position: absolute;
-                            z-index: 12;
+                            z-index: 120;
                         }
 
                         .css-9exage:hover {
@@ -1951,6 +1953,9 @@
                                 align-items: center;
                                 width: 600px;
                                 padding-bottom: 20px;
+
+                                position: relative;
+                                z-index: 100;
                             }
 
                             @media (max-width: 760px) {
@@ -1959,6 +1964,12 @@
                                     -ms-flex-order: 1;
                                     order: 1;
                                     width: 400px;
+                                }
+                            }
+
+                            @media (max-width: 480px) {
+                                .css-13eevqr {
+                                    width: 90%;
                                 }
                             }
                         </style>
@@ -2040,7 +2051,16 @@
                                         padding: 5px 10px;
                                         text-align: left !important;
 
-                                        flex: 1 0 auto;
+                                        flex: 1 1 auto;
+
+                                        @media (max-width: 760px) {
+                                            font-size: 1rem;
+
+                                        }
+
+                                        @media (max-width: 430px) {
+                                            font-size: unset;
+                                        }
                                     }
 
                                     #send-button {
@@ -2061,6 +2081,11 @@
 
                                         display: flex;
                                         gap: 5px;
+
+                                        @media (max-width: 430px) {
+                                            flex-direction: column;
+                                            align-items: stretch;
+                                        }
                                     }
                                 </style>
                                 <div class="css-trexgg" id="chat-history"></div>
@@ -2085,6 +2110,136 @@
                         <img src="../static/flower-9bea7ef63a4b37f7ad0d73578309fe78.png" alt="footer"
                             class="css-zsw4ia">
                     </div>
+                </div>
+            </div>
+            <style data-emotion="css 1725vyu">
+                .css-1725vyu {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-flex-wrap: nowrap;
+                    -webkit-flex-wrap: nowrap;
+                    -ms-flex-wrap: nowrap;
+                    flex-wrap: nowrap;
+                    -webkit-box-pack: justify;
+                    -webkit-justify-content: space-between;
+                    justify-content: space-between;
+                }
+            </style>
+            <div class="css-1725vyu">
+                <style data-emotion="css 1n9vvn6">
+                    .css-1n9vvn6 {
+                        width: 10%;
+                        min-width: 50px;
+                    }
+
+                    @media (max-width: 786px) {
+                        .css-1n9vvn6 {
+                            font-size: 10%;
+                        }
+                    }
+                </style>
+                <style data-emotion="css 18nkp5s">
+                    .css-18nkp5s {
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-flex-direction: column;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        -webkit-justify-content: center;
+                        justify-content: center;
+                        font-family: Lemonade Peach;
+                        color: white;
+                        font-size: 1.5rem;
+                        -webkit-align-items: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-column-gap: 10px;
+                        column-gap: 10px;
+                        margin-top: 20px;
+                        letter-spacing: 0.05rem;
+                        padding-bottom: 8px;
+                        padding-left: 8px;
+                        padding-right: 8px;
+
+                        margin: 3rem auto;
+
+                        @media (max-width: 786px) {
+                            margin: 1.5rem auto;
+                        }
+                    }
+
+                    @media (max-width: 1200px) {
+                        .css-18nkp5s {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    @media (max-width: 768px) {
+                        .css-18nkp5s {
+                            font-size: 0.6rem;
+                        }
+                    }
+
+                    @media (max-width: 480px) {
+                        .css-18nkp5s {
+                            font-size: 0.6rem;
+                        }
+                    }
+                </style>
+                <div class="css-18nkp5s">
+                    <style data-emotion="css 1ooh6o6">
+                        .css-1ooh6o6 {
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-flex-direction: row;
+                            -ms-flex-direction: row;
+                            flex-direction: row;
+                            -webkit-column-gap: 12px;
+                            column-gap: 12px;
+                            padding-bottom: 12px;
+                            width: 100%;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                        }
+                    </style>
+                    <div class="css-1ooh6o6"><a href="https://x.com/DougDuckSol">
+                            <style data-emotion="css 136fx0r">
+                                .css-136fx0r {
+                                    width: 50px;
+                                    height: 50px;
+                                }
+
+                                @media (max-width: 768px) {
+                                    .css-136fx0r {
+                                        width: 30px;
+                                        height: 30px;
+                                    }
+                                }
+                            </style>
+                            <img src="../static/xIconBorderless-0cc49b1a1919329fb7a4826f851a6589.png"
+                                class="css-136fx0r">
+                        </a><a href="https://t.me/dougtheduck"><img
+                                src="../static/telegramIconBorderless-127291a2e58b428e4c268598d38f29f9.png"
+                                class="css-136fx0r"></a><a href="https://www.instagram.com/dougducksol/"><img
+                                src="../static/instagram-3b382c843071d9bc0653f043b56ceb6b.png"
+                                class="css-136fx0r"></a><a href="https://www.tiktok.com/@dougducksolana"><img
+                                src="../static/tiktok-703c7562b607fc55a6fc3672f5b3f2ca.png" class="css-136fx0r"></a><a
+                            href="https://www.youtube.com/@DougTheDuckSol"><img
+                                src="../static/youtube-060528b6e83f2004078d4015a587f873.png" class="css-136fx0r"></a>
+                    </div>
+                    <p>$Doug is a meme token with no intrinsic value or expectation of financial return.</p>
+                    <p>There is no formal team. The token is completely useless and for entertainment purposes only.</p>
                 </div>
             </div>
             <div id="gatsby-announcer"
